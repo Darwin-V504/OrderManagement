@@ -1,0 +1,1448 @@
+{
+  "info": {
+    "_postman_id": "0784c443-a3b6-4c63-87d6-0cb0601d1623",
+    "name": "Prueba_Completa Copy",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "api",
+      "item": [
+        {
+          "name": "Clients",
+          "item": [
+            {
+              "name": "{id}",
+              "item": [
+                {
+                  "name": "/api/Clients/:id",
+                  "id": "4c0ac43a-334d-4201-a3ce-1cf900ef5c15",
+                  "protocolProfileBehavior": {
+                    "disableBodyPruning": true
+                  },
+                  "request": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "key": "Accept",
+                        "value": "text/plain"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{base_url}}/api/Clients/:id",
+                      "host": [
+                        "{{base_url}}"
+                      ],
+                      "path": [
+                        "api",
+                        "Clients",
+                        ":id"
+                      ],
+                      "variable": [
+                        {
+                          "key": "id",
+                          "value": "1"
+                        }
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "id": "c20cc30d-49d5-4eb9-ae6a-94c127d1549e",
+                      "name": "OK",
+                      "originalRequest": {
+                        "method": "GET",
+                        "header": [
+                          {
+                            "key": "Accept",
+                            "value": "text/plain"
+                          }
+                        ],
+                        "url": {
+                          "raw": "{{base_url}}/api/Clients/:id",
+                          "host": [
+                            "{{base_url}}"
+                          ],
+                          "path": [
+                            "api",
+                            "Clients",
+                            ":id"
+                          ],
+                          "variable": [
+                            {
+                              "key": "id",
+                              "value": "1"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": "json",
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json"
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "{\n  \"success\": true,\n  \"message\": \"string\",\n  \"errors\": [\n    \"string\",\n    \"string\"\n  ],\n  \"data\": {\n    \"clienteId\": 5201,\n    \"nombre\": \"string\",\n    \"identidad\": \"string\"\n  }\n}"
+                    }
+                  ]
+                },
+                {
+                  "name": "/api/Clients/:id",
+                  "id": "d1dfb1dd-673d-4cd5-860a-0e33c610a5d4",
+                  "protocolProfileBehavior": {
+                    "disableBodyPruning": true
+                  },
+                  "request": {
+                    "method": "PUT",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      },
+                      {
+                        "key": "Accept",
+                        "value": "text/plain"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n  \"nombre\": \"string\",\n  \"identidad\": \"string\"\n}",
+                      "options": {
+                        "raw": {
+                          "headerFamily": "json",
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "{{baseUrl}}/api/Clients/:id",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "api",
+                        "Clients",
+                        ":id"
+                      ],
+                      "variable": [
+                        {
+                          "key": "id",
+                          "value": "934"
+                        }
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "id": "20929047-767a-4411-aa90-593b8af9c6c7",
+                      "name": "OK",
+                      "originalRequest": {
+                        "method": "PUT",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          },
+                          {
+                            "key": "Accept",
+                            "value": "text/plain"
+                          }
+                        ],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\n  \"nombre\": \"string\",\n  \"identidad\": \"string\"\n}",
+                          "options": {
+                            "raw": {
+                              "headerFamily": "json",
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "{{baseUrl}}/api/Clients/:id",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "api",
+                            "Clients",
+                            ":id"
+                          ],
+                          "variable": [
+                            {
+                              "key": "id",
+                              "value": "934"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": "json",
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json"
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "{\n  \"success\": true,\n  \"message\": \"string\",\n  \"errors\": [\n    \"string\",\n    \"string\"\n  ],\n  \"data\": {\n    \"clienteId\": 5201,\n    \"nombre\": \"string\",\n    \"identidad\": \"string\"\n  }\n}"
+                    }
+                  ]
+                },
+                {
+                  "name": "/api/Clients/:id error",
+                  "id": "3e73ceef-cd05-4832-b730-91e2f1ae223c",
+                  "protocolProfileBehavior": {
+                    "disableBodyPruning": true
+                  },
+                  "request": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "key": "Accept",
+                        "value": "text/plain"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{base_url}}/api/Clients/:id",
+                      "host": [
+                        "{{base_url}}"
+                      ],
+                      "path": [
+                        "api",
+                        "Clients",
+                        ":id"
+                      ],
+                      "variable": [
+                        {
+                          "key": "id",
+                          "value": "134929"
+                        }
+                      ]
+                    }
+                  },
+                  "response": []
+                },
+                {
+                  "name": "/api/Clients/:id success",
+                  "id": "ff4d172b-3e9d-46c1-a69a-340dd3c40dd5",
+                  "protocolProfileBehavior": {
+                    "disableBodyPruning": true
+                  },
+                  "request": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "key": "Accept",
+                        "value": "text/plain"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{base_url}}/api/Clients/:id",
+                      "host": [
+                        "{{base_url}}"
+                      ],
+                      "path": [
+                        "api",
+                        "Clients",
+                        ":id"
+                      ],
+                      "variable": [
+                        {
+                          "key": "id",
+                          "value": "1"
+                        }
+                      ]
+                    }
+                  },
+                  "response": []
+                },
+                {
+                  "name": "/api/Clients/:id success search for id",
+                  "id": "065733fc-13fd-4825-a6b5-f3645cf29878",
+                  "protocolProfileBehavior": {
+                    "disableBodyPruning": true
+                  },
+                  "request": {
+                    "method": "PUT",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      },
+                      {
+                        "key": "Accept",
+                        "value": "text/plain"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n  \"nombre\": \"Pedro Sanches Benitez\",\n  \"identidad\": \"05302-39320-3919\"\n}",
+                      "options": {
+                        "raw": {
+                          "headerFamily": "json",
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "{{base_url}}/api/Clients/:id",
+                      "host": [
+                        "{{base_url}}"
+                      ],
+                      "path": [
+                        "api",
+                        "Clients",
+                        ":id"
+                      ],
+                      "variable": [
+                        {
+                          "key": "id",
+                          "value": "1"
+                        }
+                      ]
+                    }
+                  },
+                  "response": []
+                },
+                {
+                  "name": "/api/Clients/:id error search for id",
+                  "id": "4ad11a0c-4975-4f62-83ab-de2856aea345",
+                  "protocolProfileBehavior": {
+                    "disableBodyPruning": true
+                  },
+                  "request": {
+                    "method": "PUT",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      },
+                      {
+                        "key": "Accept",
+                        "value": "text/plain"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n  \"nombre\": \"string\",\n  \"identidad\": \"string\"\n}",
+                      "options": {
+                        "raw": {
+                          "headerFamily": "json",
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "{{base_url}}/api/Clients/:id",
+                      "host": [
+                        "{{base_url}}"
+                      ],
+                      "path": [
+                        "api",
+                        "Clients",
+                        ":id"
+                      ],
+                      "variable": [
+                        {
+                          "key": "id",
+                          "value": "934"
+                        }
+                      ]
+                    }
+                  },
+                  "response": []
+                }
+              ],
+              "id": "c0b3fb56-25b5-4bed-9906-9a90c2f7afd0"
+            },
+            {
+              "name": "/api/Clients",
+              "id": "cb1a0388-1b3a-4ef7-9356-92178a06461e",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "text/plain"
+                  }
+                ],
+                "url": {
+                  "raw": "{{base_url}}/api/Clients",
+                  "host": [
+                    "{{base_url}}"
+                  ],
+                  "path": [
+                    "api",
+                    "Clients"
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "id": "006b1eb1-19c5-4d38-9c50-e6bb8270f455",
+                  "name": "OK",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "key": "Accept",
+                        "value": "text/plain"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/api/Clients",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "api",
+                        "Clients"
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\n  \"success\": false,\n  \"message\": \"string\",\n  \"errors\": [\n    \"string\",\n    \"string\"\n  ],\n  \"data\": [\n    {\n      \"clienteId\": 8774,\n      \"nombre\": \"string\",\n      \"identidad\": \"string\"\n    },\n    {\n      \"clienteId\": 5574,\n      \"nombre\": \"string\",\n      \"identidad\": \"string\"\n    }\n  ]\n}"
+                }
+              ]
+            },
+            {
+              "name": "/api/Clients",
+              "id": "6bf08bd0-7b9e-4929-9073-efa7f71dd516",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "text/plain"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"nombre\": \"string\",\n  \"identidad\": \"string\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/api/Clients",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "Clients"
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "id": "62ce6be5-2205-4ae9-9cd6-fbf547e9f29d",
+                  "name": "OK",
+                  "originalRequest": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      },
+                      {
+                        "key": "Accept",
+                        "value": "text/plain"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n  \"nombre\": \"string\",\n  \"identidad\": \"string\"\n}",
+                      "options": {
+                        "raw": {
+                          "headerFamily": "json",
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "{{baseUrl}}/api/Clients",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "api",
+                        "Clients"
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\n  \"success\": true,\n  \"message\": \"string\",\n  \"errors\": [\n    \"string\",\n    \"string\"\n  ],\n  \"data\": {\n    \"clienteId\": 5201,\n    \"nombre\": \"string\",\n    \"identidad\": \"string\"\n  }\n}"
+                }
+              ]
+            },
+            {
+              "name": "/api/Clients get success",
+              "id": "66eef3b4-e6eb-4a68-89bc-baf408b438a0",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "text/plain"
+                  }
+                ],
+                "url": {
+                  "raw": "{{base_url}}/api/Clients",
+                  "host": [
+                    "{{base_url}}"
+                  ],
+                  "path": [
+                    "api",
+                    "Clients"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "/api/Clients post success",
+              "id": "43ecb0e2-a001-4b45-a6f1-d37ec83148b4",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "text/plain"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"nombre\": \"Maria Antonieta\",\n  \"identidad\": \"03342-949123-93\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{base_url}}/api/Clients?=",
+                  "host": [
+                    "{{base_url}}"
+                  ],
+                  "path": [
+                    "api",
+                    "Clients"
+                  ],
+                  "query": [
+                    {
+                      "key": "",
+                      "value": "",
+                      "uuid": "c1ffc6db-f6e3-4a3e-a2be-193ee5377447"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "/api/Clients post error id duplicate",
+              "id": "7af7541c-803c-4259-b5c6-a9520db52cf0",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "text/plain"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"nombre\": \"Sergio Serafino\",\n  \"identidad\": \"05302-39320-3919\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{base_url}}/api/Clients?=",
+                  "host": [
+                    "{{base_url}}"
+                  ],
+                  "path": [
+                    "api",
+                    "Clients"
+                  ],
+                  "query": [
+                    {
+                      "key": "",
+                      "value": "",
+                      "uuid": "c1ffc6db-f6e3-4a3e-a2be-193ee5377447"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            }
+          ],
+          "id": "53840118-b981-4f18-b316-576f34a52763"
+        },
+        {
+          "name": "Ordenes",
+          "item": [
+            {
+              "name": "/api/Ordenes",
+              "id": "3b4718e1-93b1-4f51-9309-e6397c623297",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "text/plain"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"clienteId\": 2509,\n  \"detalles\": [\n    {\n      \"productoId\": 485,\n      \"cantidad\": 5747\n    },\n    {\n      \"productoId\": 4068,\n      \"cantidad\": 9102\n    }\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/api/Ordenes",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "Ordenes"
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "id": "a6fbd32c-7e0e-4720-8f1a-0572e42d0ea4",
+                  "name": "OK",
+                  "originalRequest": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      },
+                      {
+                        "key": "Accept",
+                        "value": "text/plain"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n  \"clienteId\": 2509,\n  \"detalles\": [\n    {\n      \"productoId\": 485,\n      \"cantidad\": 5747\n    },\n    {\n      \"productoId\": 4068,\n      \"cantidad\": 9102\n    }\n  ]\n}",
+                      "options": {
+                        "raw": {
+                          "headerFamily": "json",
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "{{baseUrl}}/api/Ordenes",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "api",
+                        "Ordenes"
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\n  \"success\": true,\n  \"message\": \"string\",\n  \"errors\": [\n    \"string\",\n    \"string\"\n  ],\n  \"data\": {\n    \"ordenId\": 9578,\n    \"clienteId\": 6706,\n    \"impuesto\": 6382.272454535844,\n    \"subtotal\": 3595.1135305250646,\n    \"total\": 1779.55832858812,\n    \"fechaCreacion\": \"1994-06-10T04:26:07.909Z\",\n    \"detalles\": [\n      {\n        \"detalleOrdenId\": 993,\n        \"productoId\": 8095,\n        \"cantidad\": 8156,\n        \"impuesto\": 3919.2107979178513,\n        \"subtotal\": 3517.5302281820486,\n        \"total\": 470.4946251378206\n      },\n      {\n        \"detalleOrdenId\": 1771,\n        \"productoId\": 5703,\n        \"cantidad\": 6229,\n        \"impuesto\": 1290.9710357675208,\n        \"subtotal\": 5750.969576235118,\n        \"total\": 7719.473251147017\n      }\n    ]\n  }\n}"
+                }
+              ]
+            },
+            {
+              "name": "/api/Ordenes success",
+              "id": "7718121c-4b8d-4838-b91d-849f9acb782f",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "text/plain"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"clienteId\": 1,\n  \"detalles\": [\n    {\n      \"productoId\": 1,\n      \"cantidad\": 1\n    },\n    {\n      \"productoId\": 1,\n      \"cantidad\": 1\n    }\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{base_url}}/api/Ordenes",
+                  "host": [
+                    "{{base_url}}"
+                  ],
+                  "path": [
+                    "api",
+                    "Ordenes"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "/api/Ordenes error existencias insuficientes",
+              "id": "c69ba293-4546-4ad3-bd89-21a75d9465ba",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "text/plain"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"clienteId\": 1,\n  \"detalles\": [\n    {\n      \"productoId\": 1,\n      \"cantidad\": 10000\n    },\n    {\n      \"productoId\": 1,\n      \"cantidad\": 1000\n    }\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{base_url}}/api/Ordenes",
+                  "host": [
+                    "{{base_url}}"
+                  ],
+                  "path": [
+                    "api",
+                    "Ordenes"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "/api/Ordenes error id does not exist",
+              "id": "f9664d21-431a-437a-88d8-1f76b778390c",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "text/plain"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"clienteId\": 199329,\n  \"detalles\": [\n    {\n      \"productoId\": 3,\n      \"cantidad\": 1\n    },\n    {\n      \"productoId\": 1,\n      \"cantidad\": 1\n    }\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{base_url}}/api/Ordenes",
+                  "host": [
+                    "{{base_url}}"
+                  ],
+                  "path": [
+                    "api",
+                    "Ordenes"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ],
+          "id": "a7d973cf-5449-43c9-8a34-4fe0f3c4a3ee"
+        },
+        {
+          "name": "Products",
+          "item": [
+            {
+              "name": "{id}",
+              "item": [
+                {
+                  "name": "/api/Products/:id",
+                  "id": "15dc1371-0084-40f6-a794-47b6f5551011",
+                  "protocolProfileBehavior": {
+                    "disableBodyPruning": true
+                  },
+                  "request": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "key": "Accept",
+                        "value": "text/plain"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/api/Products/:id",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "api",
+                        "Products",
+                        ":id"
+                      ],
+                      "variable": [
+                        {
+                          "key": "id",
+                          "value": "934"
+                        }
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "id": "a1c825fd-55ce-4a21-a469-1881de9cb058",
+                      "name": "OK",
+                      "originalRequest": {
+                        "method": "GET",
+                        "header": [
+                          {
+                            "key": "Accept",
+                            "value": "text/plain"
+                          }
+                        ],
+                        "url": {
+                          "raw": "{{baseUrl}}/api/Products/:id",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "api",
+                            "Products",
+                            ":id"
+                          ],
+                          "variable": [
+                            {
+                              "key": "id",
+                              "value": "934"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": "json",
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json"
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "{\n  \"success\": true,\n  \"message\": \"string\",\n  \"errors\": [\n    \"string\",\n    \"string\"\n  ],\n  \"data\": {\n    \"productoId\": 8167,\n    \"nombre\": \"string\",\n    \"descripcion\": \"string\",\n    \"precio\": 330.1311924644712,\n    \"existencia\": 1732\n  }\n}"
+                    }
+                  ]
+                },
+                {
+                  "name": "/api/Products/:id",
+                  "id": "5d2e494f-d595-4208-867f-4d5689e877b0",
+                  "protocolProfileBehavior": {
+                    "disableBodyPruning": true
+                  },
+                  "request": {
+                    "method": "PUT",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      },
+                      {
+                        "key": "Accept",
+                        "value": "text/plain"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n  \"nombre\": \"string\",\n  \"descripcion\": \"string\",\n  \"precio\": 6887.507606117893,\n  \"existencia\": 9385\n}",
+                      "options": {
+                        "raw": {
+                          "headerFamily": "json",
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "{{baseUrl}}/api/Products/:id",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "api",
+                        "Products",
+                        ":id"
+                      ],
+                      "variable": [
+                        {
+                          "key": "id",
+                          "value": "934"
+                        }
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "id": "e00bd70e-455c-4274-ad2b-e7b852d30bb5",
+                      "name": "OK",
+                      "originalRequest": {
+                        "method": "PUT",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          },
+                          {
+                            "key": "Accept",
+                            "value": "text/plain"
+                          }
+                        ],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\n  \"nombre\": \"string\",\n  \"descripcion\": \"string\",\n  \"precio\": 6887.507606117893,\n  \"existencia\": 9385\n}",
+                          "options": {
+                            "raw": {
+                              "headerFamily": "json",
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "{{baseUrl}}/api/Products/:id",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "api",
+                            "Products",
+                            ":id"
+                          ],
+                          "variable": [
+                            {
+                              "key": "id",
+                              "value": "934"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": "json",
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json"
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "{\n  \"success\": true,\n  \"message\": \"string\",\n  \"errors\": [\n    \"string\",\n    \"string\"\n  ],\n  \"data\": {\n    \"productoId\": 8167,\n    \"nombre\": \"string\",\n    \"descripcion\": \"string\",\n    \"precio\": 330.1311924644712,\n    \"existencia\": 1732\n  }\n}"
+                    }
+                  ]
+                },
+                {
+                  "name": "/api/Products/:id get id success products",
+                  "id": "06396731-6780-4382-ae7c-e3852a14f0bc",
+                  "protocolProfileBehavior": {
+                    "disableBodyPruning": true
+                  },
+                  "request": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "key": "Accept",
+                        "value": "text/plain"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{base_url}}/api/Products/:id",
+                      "host": [
+                        "{{base_url}}"
+                      ],
+                      "path": [
+                        "api",
+                        "Products",
+                        ":id"
+                      ],
+                      "variable": [
+                        {
+                          "key": "id",
+                          "value": "1"
+                        }
+                      ]
+                    }
+                  },
+                  "response": []
+                },
+                {
+                  "name": "/api/Products/:id id get error ",
+                  "id": "9629c363-4d54-4502-8dbd-fbc6feaf8eaf",
+                  "protocolProfileBehavior": {
+                    "disableBodyPruning": true
+                  },
+                  "request": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "key": "Accept",
+                        "value": "text/plain"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{base_url}}/api/Products/:id",
+                      "host": [
+                        "{{base_url}}"
+                      ],
+                      "path": [
+                        "api",
+                        "Products",
+                        ":id"
+                      ],
+                      "variable": [
+                        {
+                          "key": "id",
+                          "value": "133323"
+                        }
+                      ]
+                    }
+                  },
+                  "response": []
+                },
+                {
+                  "name": "/api/Products/:id put id success",
+                  "id": "2d2cfcc0-3408-4400-b44c-9665e76430f7",
+                  "protocolProfileBehavior": {
+                    "disableBodyPruning": true
+                  },
+                  "request": {
+                    "method": "PUT",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      },
+                      {
+                        "key": "Accept",
+                        "value": "text/plain"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n  \"nombre\": \"Guitarra Eléctrica\",\n  \"descripcion\": \"Marca Statocaster\",\n  \"precio\": 6887.507606117893,\n  \"existencia\": 9385\n}",
+                      "options": {
+                        "raw": {
+                          "headerFamily": "json",
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "{{base_url}}/api/Products/:id",
+                      "host": [
+                        "{{base_url}}"
+                      ],
+                      "path": [
+                        "api",
+                        "Products",
+                        ":id"
+                      ],
+                      "variable": [
+                        {
+                          "key": "id",
+                          "value": "1"
+                        }
+                      ]
+                    }
+                  },
+                  "response": []
+                },
+                {
+                  "name": "/api/Products/:id put id error",
+                  "id": "68014e8a-bd03-4e86-85f4-ecf12b6eccbc",
+                  "protocolProfileBehavior": {
+                    "disableBodyPruning": true
+                  },
+                  "request": {
+                    "method": "PUT",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      },
+                      {
+                        "key": "Accept",
+                        "value": "text/plain"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n  \"nombre\": \"Guitarra Eléctrica\",\n  \"descripcion\": \"Marca Statocaster\",\n  \"precio\": 6887.507606117893,\n  \"existencia\": 9385\n}",
+                      "options": {
+                        "raw": {
+                          "headerFamily": "json",
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "{{base_url}}/api/Products/:id",
+                      "host": [
+                        "{{base_url}}"
+                      ],
+                      "path": [
+                        "api",
+                        "Products",
+                        ":id"
+                      ],
+                      "variable": [
+                        {
+                          "key": "id",
+                          "value": "1342323"
+                        }
+                      ]
+                    }
+                  },
+                  "response": []
+                }
+              ],
+              "id": "fc3b3eba-ce9e-4dd6-9bb8-5907c2cfb799"
+            },
+            {
+              "name": "/api/Products",
+              "id": "a310460e-c317-4dcd-a9d1-25c79b85c37a",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "text/plain"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/api/Products",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "Products"
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "id": "09c22924-2ecf-4430-8876-9675e281beb2",
+                  "name": "OK",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "key": "Accept",
+                        "value": "text/plain"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/api/Products",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "api",
+                        "Products"
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\n  \"success\": false,\n  \"message\": \"string\",\n  \"errors\": [\n    \"string\",\n    \"string\"\n  ],\n  \"data\": [\n    {\n      \"productoId\": 7323,\n      \"nombre\": \"string\",\n      \"descripcion\": \"string\",\n      \"precio\": 6666.35561607078,\n      \"existencia\": 2859\n    },\n    {\n      \"productoId\": 1270,\n      \"nombre\": \"string\",\n      \"descripcion\": \"string\",\n      \"precio\": 4477.795291238415,\n      \"existencia\": 6866\n    }\n  ]\n}"
+                }
+              ]
+            },
+            {
+              "name": "/api/Products",
+              "id": "b16b7a24-3652-48ab-a94e-038df3ac58ea",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "text/plain"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"nombre\": \"string\",\n  \"descripcion\": \"string\",\n  \"precio\": 6887.507606117893,\n  \"existencia\": 9385\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/api/Products",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "Products"
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "id": "6b6061a6-a6d6-4343-bcb9-7a27840b963c",
+                  "name": "OK",
+                  "originalRequest": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      },
+                      {
+                        "key": "Accept",
+                        "value": "text/plain"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n  \"nombre\": \"string\",\n  \"descripcion\": \"string\",\n  \"precio\": 6887.507606117893,\n  \"existencia\": 9385\n}",
+                      "options": {
+                        "raw": {
+                          "headerFamily": "json",
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "{{baseUrl}}/api/Products",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "api",
+                        "Products"
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\n  \"success\": true,\n  \"message\": \"string\",\n  \"errors\": [\n    \"string\",\n    \"string\"\n  ],\n  \"data\": {\n    \"productoId\": 8167,\n    \"nombre\": \"string\",\n    \"descripcion\": \"string\",\n    \"precio\": 330.1311924644712,\n    \"existencia\": 1732\n  }\n}"
+                }
+              ]
+            },
+            {
+              "name": "/api/Products get success",
+              "id": "3dfefafc-e466-4567-a058-6aeb596eb1e0",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "text/plain"
+                  }
+                ],
+                "url": {
+                  "raw": "{{base_url}}/api/Products",
+                  "host": [
+                    "{{base_url}}"
+                  ],
+                  "path": [
+                    "api",
+                    "Products"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "/api/Products post success",
+              "id": "c06abdb3-728a-4929-b6cc-a6e01b4859fa",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "text/plain"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"nombre\": \"Televisor\",\n  \"descripcion\": \"Samsung\",\n  \"precio\": 688,\n  \"existencia\": 12\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{base_url}}/api/Products",
+                  "host": [
+                    "{{base_url}}"
+                  ],
+                  "path": [
+                    "api",
+                    "Products"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ],
+          "id": "110e9040-c674-4076-9d99-9ef4ea7b650d"
+        }
+      ],
+      "id": "4e6f8e73-1fd9-478c-b70e-cd48bc8d1a82"
+    }
+  ],
+  "variable": [
+    {
+      "id": "ab8dee13-cf41-4111-be9c-6ef7f753e5d1",
+      "key": "baseUrl",
+      "value": "/"
+    }
+  ]
+}
